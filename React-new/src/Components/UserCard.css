@@ -1,0 +1,31 @@
+.user-container{
+    height: 30%;
+    width: 30%;
+    background-color: #C0A9B0;
+   padding:20px;
+   color:black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap:1rem;
+  border-radius: 10px;
+}
+
+#card{
+  padding: 0.3em;
+align-items: center;
+}
+
+#title{
+  font-size: larger;
+font-weight: bold;
+}
+
+#user-img{
+    height:11em;
+    width: 10em;
+    margin:1em 0em 1em 0em;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2); 
+}

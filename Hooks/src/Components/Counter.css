@@ -1,0 +1,26 @@
+.counter-container{
+    border: 2px solid wheat;
+    padding: 1em;
+    background-color: rgb(131, 124, 124);
+    color:black;
+    
+}
+
+#btn{
+    background-color: #D3D5D4;
+    padding: 0.5em;
+    width: 8em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px rgb(184, 203, 200);
+    border-width: 1px solid black;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+#btn:hover{
+    color:blue;
+    background-color: whitesmoke;
+    border-color: rgb(20, 20, 221);
+    width: 8.5em;
+    
+}
