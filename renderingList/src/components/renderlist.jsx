@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Renderlist = ({list}) => {
-    const listitem=list.map(person=><li key={person.id}>{person.name}</li>);
+    const listitem=list.map(person=><li key={person.id}>{person.name}  ,  {person. profession}</li>);
   return (
     <ul>{listitem}</ul>
   )

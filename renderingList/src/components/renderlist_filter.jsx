@@ -1,16 +1,15 @@
 import React from 'react'
 
-const Renderlist_filter = ({newlist,children}) => {
-  console.log(newlist);
+const Renderlist_filter = ({newlist}) => {
+
     const chemist=newlist.filter(person=>person.profession==='chemist');
 
-    const arr=chemist.map(chem=><li >
-    
-        <p>{chem.name}</p>   
+    const arr=chemist.map(chem=><li key={chem.id}>
+     {chem.name}   
          </li>);
   return (
     <div>
-      <ul>{children}{arr}</ul>
+      <ul>{arr}</ul>
     </div>
   )
 }
