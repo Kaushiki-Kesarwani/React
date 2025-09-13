@@ -1,10 +1,12 @@
 import React from 'react'
 
-const State_lifting = (props) => {
+const State_lifting = ({title,onChange,name}) => {
   return (
     <div>
-      <input type='text' onChange={(e)=>{props.setName(e.target.value)}}/>
-      <p>Name state value inside {props.title}:{props.name}</p>
+      {title}
+      {'  '}
+      <input type='text' value={name} onChange={onChange}/>
+    
     </div> 
   )
 }
