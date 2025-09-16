@@ -1,34 +1,47 @@
-
+import React from 'react';
 import './App.css'
-// import Handler from './Components/handler'
-// import PassHandler from './Components/PassHandler'
-// import Toolbar from './Components/Toolbar'
-// import Signup from './Components/signup'
+import { useState } from 'react';
 import Togglelight from './Components/Togglelight'
+import ColorSwitch from './Components/colorSwitch';
 
 function App() {
+
+  const[click,setClick]=useState(0);
+
+  function handleClickoutside(){
+    setClick(c=>c+1);
+  }
+
+  function getRandomcolors(){
+    let r = 150+Math.round(100*Math.random());
+    let g = 150+Math.round(100*Math.random());
+    let b = 150+Math.round(100*Math.random());
+    return `rgb(${r},${g},${b})`;
+  }
+
+  function handleColors(){
+    let body=document.body.style;
+    body.backgroundColor = getRandomcolors();
+  }
+
+  function handleClick(){
+    alert("You have clicked");
+  }
 
   return (
     <>
       <div>
-      {/* <button onClick={handleClick}>Click me!</button> */}
-      {/* <button onClick={()=>alert("This is some text i m redering to my web page")}>Click me!</button> */}
-{/* <Handler></Handler> */}
-{/* <Handler message="playing">play</Handler>
-<Handler message="Watching movie">movie</Handler>
-
-<PassHandler onClick={()=>{alert("playing kiki's Delivery service")}}>movie</PassHandler>
-
-<PassHandler onClick={()=>{prompt("Enter the name of your favourite game")
-alert("Game Loading.....")
-
-}}>game</PassHandler>
-
- <Toolbar handleonClickpar={()=>  alert("I am child,See how event bubbles")}/>
-<Toolbar handleonClick={()=>alert("I am child,See how event bubbles")}/> 
-<Signup/> */}
+      {<button onClick={handleClick}>Click me!</button> }
+      { <button onClick={()=>alert("This is some text i m redering to my web page")}>Click me!</button> }
 
    <Togglelight/>
+
+
+
+<ColorSwitch  onClick={handleClickoutside} onChangecolor={handleColors}>
+<h2>Clicks on the page:{click}</h2>
+</ColorSwitch>
+   
     </div>
      
      
