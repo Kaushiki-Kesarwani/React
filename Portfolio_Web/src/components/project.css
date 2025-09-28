@@ -1,0 +1,42 @@
+.project{
+    display: flex;
+    justify-content: space-around;
+    justify-items: space-evenly;
+}
+
+#code{
+   
+    width: 250px;
+    height: 200px;
+    border-radius: 1em;
+    margin-bottom: 5px;
+
+}
+
+#web{
+  
+     width: 250px;
+    height: 200px;
+    border-radius: 1em;
+     margin-bottom: 5px;
+    
+}
+#box1{
+    height: 400px;
+    width: 280px;
+    border: 3px solid blue;
+    border-radius: 1.5em;
+     margin: 0 1em 2em 0;
+     background-color: #B8BACF;
+     padding-top: 10px ;
+}
+
+#box2{
+     height: 400px;
+         width:  280px;
+    border: 3px solid blue;
+    border-radius: 1.5em;
+      margin-bottom: 2em;
+      background-color:#B8BACF;
+        padding-top: 10px;
+}
