@@ -1,0 +1,15 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.btn{
+
+    display: flex;
+  justify-content: center;
+    align-content: center;
+  justify-content: space-between;
+
+}
